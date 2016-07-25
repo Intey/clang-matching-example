@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.6)
+
+project(loopConvertor)
+
 find_package(LLVM REQUIRED)
 find_package(Clang REQUIRED)
 
-# set(LLVM_LINK_COMPONENTS support)
 # if clang add libc++ stdlib flag
 if(CMAKE_CXX_COMPILER MATCHES "[cC]lang\\+\\+")
     message(STATUS "FIXATING clang++")
